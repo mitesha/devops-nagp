@@ -7,6 +7,12 @@ pipeline {
             }
         }
 
+        stage('Unit test') {
+            steps {
+                sh 'mvn -Dmaven.test.failure.ignore=true test'
+            }
+        }
+
         stage('Package') {
             steps {
                 sh 'mvn -Dmaven.test.failure.ignore=true package'
