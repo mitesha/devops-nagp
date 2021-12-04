@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               'mvn clean compile'
+               mvn clean compile
             }
         }
 
         stage('Unit test') {
             steps {
-                'mvn clean test'
+                mvn clean test
             }
         }
 
         stage('Package') {
             steps {
-                'mvn clean package'
+                mvn clean package
             }
         }
     }
