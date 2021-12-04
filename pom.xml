@@ -17,19 +17,6 @@
 		<java.version>11</java.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>dev-azure-com-mashreqdigital-core-components</id>
-			<url>https://pkgs.dev.azure.com/MashreqDigital/_packaging/core-components/maven/v1</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
