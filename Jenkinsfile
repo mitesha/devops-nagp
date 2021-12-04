@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-               mvn clean compile
+               sh 'mvn clean'
             }
         }
 
         stage('Unit test') {
             steps {
-                mvn clean test
+                sh 'mvn test'
             }
         }
 
         stage('Package') {
             steps {
-                mvn clean package
+                sh 'mvn -Dmaven.test.failure.ignore=true package'
             }
         }
     }
